@@ -1,6 +1,6 @@
-# KhanSla
+# KhanSla: Wedding Planning App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2. We create this app to assist new couples to arrange their wedding even more easier with various choice that they can opt ranging from restuarants, wedding venue, to salon. We also integrate KHQR as another form for the guests to give the gifts to the newly-wed couple as well.  
 
 ## Development server
 
