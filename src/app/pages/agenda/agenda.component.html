@@ -1,0 +1,21 @@
+<div class="h-screen w-screen flex flex-col bg-cover bg-center overflow-auto"
+     [style.background-image]="bgImage">
+  <app-header [back]="true" [id]="id"></app-header>
+  <main class="h-full">
+    <div class="w-full flex flex-col p-4">
+      <div class="text-2xl text-center title">កម្មវិធីសិរីមង្គលអាពាហ៌ពិពាហ៏</div>
+      <div class="flex flex-col p-4">
+        <ng-container *ngFor="let item of agendas">
+          <div *ngIf="item.header">
+            <div class="my-2 font-bold" [innerHTML]="item.title"></div>
+          </div>
+          <div *ngIf="item.header === undefined" class="flex agenda my-1">
+            <span class="time">{{item.time}}</span>
+            :
+            <div class="pl-2">{{item.title}}</div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </main>
+</div>

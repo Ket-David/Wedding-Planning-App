@@ -1,0 +1,25 @@
+<!--<ng-container *ngIf="couple$ | async as couple">-->
+<!--  <ng-container [ngSwitch]="couple.theme">-->
+<!--    <ng-container *ngSwitchCase="null">-->
+<!--      <div>null</div>-->
+<!--    </ng-container>-->
+<!--    <ng-container *ngSwitchDefault>-->
+<!--      <div class="h-screen w-screen flex flex-col bg-cover bg-center overflow-auto"-->
+<!--        [style.background-image]="couple.theme.bgImage">-->
+<!--        <app-header [back]="back"></app-header>-->
+<!--        <main class="h-full">-->
+<!--          <router-outlet></router-outlet>-->
+<!--        </main>-->
+<!--      </div>-->
+<!--    </ng-container>-->
+<!--    <div class="h-screen w-screen flex flex-col bg-cover bg-center overflow-auto"-->
+<!--         [style.background-image]="couple.theme.bgImage">-->
+<!--      <app-header [back]="back"></app-header>-->
+<!--      <main class="h-full">-->
+<!--        <router-outlet></router-outlet>-->
+<!--      </main>-->
+<!--    </div>-->
+<!--  </ng-container>-->
+
+<!--</ng-container>-->
+<router-outlet></router-outlet>

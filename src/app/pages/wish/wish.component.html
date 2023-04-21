@@ -1,0 +1,8 @@
+<div class="h-full w-80">
+  <div class="aspect-[3/5] w-full bg-cover bg-center" [style.background-image]="getUrl()">
+  </div>
+  <section class="flex flex-row justify-around items-center mt-4">
+    <button mat-stroked-button mat-dialog-close>Close</button>
+    <button mat-stroked-button (click)="onSend()" color="primary">SEND</button>
+  </section>
+</div>

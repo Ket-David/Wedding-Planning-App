@@ -1,0 +1,9 @@
+<div class="grid justify-evenly grid-cols-3 ">
+  <ng-container *ngFor="let item of wishes">
+    <div class ="py-2 mr-2 ml-2 " (click)="onWish(item)">
+      <div class="aspect-[3/5] w-full bg-cover bg-center" [style.background-image]="getUrl(item.photo)">
+      </div>
+    </div>
+  </ng-container>
+</div>
+

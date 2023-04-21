@@ -1,0 +1,19 @@
+<div class="h-screen w-screen flex flex-col bg-cover bg-center overflow-auto"
+     [style.background-image]="bgImage">
+  <app-header [back]="false"></app-header>
+  <main class="h-full">
+    <div class="gap-y-2 flex flex-row flex-wrap m-4">
+      <ng-container *ngFor="let app of apps">
+        <div (click)="onApp(app)" [style.width]="app.width ?? '50%'">
+          <div class="h-full flex flex-col justify-start items-center">
+            <div class="circle-card flex justify-center items-center bg-center bg-contain bg-no-repeat"
+                 [style.background-image]="frame">
+              <div class="icon bg-center bg-cover bg-no-repeat" [style.background-image]="'url('+app.photo+')'"></div>
+            </div>
+            <div class="my-0 text-lg text-center fast-hand font-bold" [style.color]="color" [innerHTML]="app.name"></div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </main>
+</div>

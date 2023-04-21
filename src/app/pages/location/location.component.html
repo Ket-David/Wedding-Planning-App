@@ -1,0 +1,37 @@
+<div class="h-screen w-screen flex flex-col bg-cover bg-center overflow-auto"
+     [style.background-image]="bgImage">
+  <app-header [back]="true" [id]="id"></app-header>
+  <main class="h-full">
+    <div class="h-full w-full grid gap-4 p-4" [ngClass]="getClass()">
+      <ng-container *ngIf="custom != ''">
+        <div class="bg-teal-900 w-full flex flex-col rounded-[15px] overflow-hidden">
+          <br>
+          <p class="text-center text-white text-xl fast-hand">{{customTitle}}</p>
+          <div class="w-full h-full bg-center bg-cover">
+            <iframe [src]="custom | safe" width="100%" height="100%" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="home != ''">
+        <div class="bg-teal-900 w-full flex flex-col rounded-[15px] overflow-hidden">
+          <br>
+          <p class="text-center text-white text-xl fast-hand">{{homeTitle}}</p>
+          <div class="w-full h-full bg-center bg-cover">
+            <iframe [src]="home | safe" width="100%" height="100%" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="restaurant != ''">
+        <div class="bg-teal-900 w-full flex flex-col rounded-[15px] overflow-hidden">
+          <br>
+          <p class="text-center text-white text-xl fast-hand">{{restaurantTitle}}</p>
+          <div class="w-full h-full bg-center bg-cover">
+            <iframe [src]="restaurant | safe" width="100%" height="100%"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+
+  </main>
+</div>

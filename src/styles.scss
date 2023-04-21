@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+  background: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.fast-hand {
+  font-family: 'Kantumruy Pro', sans-serif !important;
+}
+
+.siemreap {
+  font-family: 'Siemreap', cursive !important;
+}
+.kdam-thmor {
+  font-family: 'Kdam Thmor Pro', sans-serif !important;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
